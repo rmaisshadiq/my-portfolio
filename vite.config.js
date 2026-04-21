@@ -7,6 +7,11 @@ import { fileURLToPath } from "url";
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react(), tailwindcss()],
+  server: {
+    headers: {
+      "Content-Disposition": "inline",
+    },
+  },
   resolve: {
     alias: {
       "#components": resolve(

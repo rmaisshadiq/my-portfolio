@@ -1,0 +1,17 @@
+# Allow all crawlers to index the entire site
+User-agent: *
+Allow: /
+Disallow: 
+
+# Sitemap location
+Sitemap: https://rmaisshadiq.my.id/sitemap.xml
+
+# Search engine guidelines
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Slurp
+Allow: /

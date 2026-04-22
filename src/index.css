@@ -163,7 +163,7 @@ body {
   }
 
   #terminal {
-    @apply w-xl absolute top-32 left-1/12 bg-white shadow-2xl drop-shadow-2xl rounded-xl overflow-hidden;
+    @apply max-w-2xl absolute top-60 left-5/12 bg-white shadow-2xl drop-shadow-2xl rounded-xl overflow-hidden;
 
     h2 {
       @apply font-bold text-sm text-center w-full;
@@ -181,7 +181,7 @@ body {
 
         li {
           .check {
-            @apply text-[#00A154] w-5;
+            @apply text-[#00A154] w-5 ;
           }
 
           h3 {
@@ -302,6 +302,26 @@ body {
     #window-header {
       h2 {
         @apply font-bold text-sm text-center flex-1;
+      }
+    }
+
+    .page-controls {
+      @apply flex items-center justify-center gap-4 p-4 bg-gray-50 border-t border-gray-200;
+    }
+
+    .page-controls {
+      @apply flex items-center justify-center gap-4 p-4 bg-gray-50 border-t border-gray-200;
+
+      .page-button {
+        @apply flex items-center justify-center w-8 h-8 bg-white border border-gray-300 rounded-full hover:bg-gray-100 disabled:opacity-50 disabled:cursor-not-allowed transition-colors;
+
+        svg {
+          @apply text-gray-600;
+        }
+      }
+
+      .page-info {
+        @apply text-sm font-medium text-gray-700;
       }
     }
   }

@@ -16,7 +16,7 @@ const Text = () => {
         <h2>{name}</h2>
       </div>
 
-      <div className="p-5 space-y-6 bg-white">
+      <div className="p-5 space-y-6 bg-white max-w-2xl">
         {image ? (
           <div className="w-full">
             <img src={image} alt={image} className="w-full h-auto rounded" />
